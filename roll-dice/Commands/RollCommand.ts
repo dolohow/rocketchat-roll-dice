@@ -1,7 +1,6 @@
 import { IRead, IModify, IHttp, IPersistence, IModifyCreator, IMessageBuilder } from '@rocket.chat/apps-engine/definition/accessors';
 import { IMessage } from '@rocket.chat/apps-engine/definition/messages';
-import { IRoom } from '@rocket.chat/apps-engine/definition/rooms';
-import { ISlashCommand, ISlashCommandPreview, ISlashCommandPreviewItem, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
+import { ISlashCommand, SlashCommandContext } from '@rocket.chat/apps-engine/definition/slashcommands';
 import { IUser } from '@rocket.chat/apps-engine/definition/users';
 
 export class RollCommand implements ISlashCommand {
