@@ -22,7 +22,7 @@ export class RollCommand implements ISlashCommand {
         const maxNumber: number = parseInt(argMaxNumber) || 6;
 
         const messageTemplate: IMessage = {
-            text: `@${sender.username} rolled **${this.getRandomNumberAsString(maxNumber)}**`,
+            text: `@${sender.username} rolled **${this.getRandomNumberAsString(maxNumber)}** with parameter equal **${maxNumber}**`,
             sender: (await read.getUserReader().getAppUser()) as IUser,
             room: context.getRoom()
         };
