@@ -16,16 +16,15 @@ export class RollCommand implements ISlashCommand {
 
     async executor(context: SlashCommandContext, read: IRead, modify: IModify, http: IHttp, persis: IPersistence): Promise<void> {
         const creator: IModifyCreator = modify.getCreator();
+        const sender = context.getSender();
 
         const [argMaxNumber] = context.getArguments();
         const maxNumber: number = parseInt(argMaxNumber) || 6;
 
-        const sender: IUser = (await read.getUserReader().getAppUser()) as IUser;
-        const room: IRoom = context.getRoom();
         const messageTemplate: IMessage = {
-            text: this.getRandomNumberAsString(maxNumber),
-            sender,
-            room
+            text: `@${sender.username} rolled **${this.getRandomNumberAsString(maxNumber)}**`,
+            sender: (await read.getUserReader().getAppUser()) as IUser,
+            room: context.getRoom()
         };
 
         const messageBuilder: IMessageBuilder = creator.startMessage(messageTemplate);
