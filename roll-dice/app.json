@@ -1,15 +1,16 @@
 {
     "id": "ed7d81a9-f562-4c9b-a468-f676a383ebe0",
     "version": "0.0.1",
-    "requiredApiVersion": "^1.4.0",
+    "requiredApiVersion": "^1.19.0",
     "iconFile": "icon.png",
     "author": {
         "name": "Łukasz Żarnowiecki",
         "homepage": "zarnowiecki.pl",
-        "support": "zarnowiecki.pl"
+        "support": "github.com/dolohow/rocketchat-roll-dice/issues"
     },
-    "name": "roll-dice",
-    "nameSlug": "roll-dice",
+    "name": "Dice",
+    "nameSlug": "dice",
     "classFile": "RollDiceApp.ts",
-    "description": "Rolls a dice"
+    "description": "Rolls the dice",
+    "implements": []
 }
