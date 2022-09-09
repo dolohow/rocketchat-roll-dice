@@ -1,0 +1,15 @@
+{
+    "id": "ed7d81a9-f562-4c9b-a468-f676a383ebe0",
+    "version": "0.0.1",
+    "requiredApiVersion": "^1.4.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Łukasz Żarnowiecki",
+        "homepage": "zarnowiecki.pl",
+        "support": "zarnowiecki.pl"
+    },
+    "name": "roll-dice",
+    "nameSlug": "roll-dice",
+    "classFile": "RollDiceApp.ts",
+    "description": "Rolls a dice"
+}
